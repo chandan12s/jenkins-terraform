@@ -26,11 +26,11 @@ pipeline {
             }
         }
 
-        // stage('Infrastructure deployment') {
-        //     steps {
-        //         sh 'terraform apply -input=false tfplan'
-        //     }
-        // }
+        stage('Infrastructure deployment') {
+            steps {
+                sh 'terraform apply -input=false tfplan'
+            }
+        }
     }
 
     // post {
